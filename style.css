@@ -1,0 +1,160 @@
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.container {
+    width: 75%;
+    height: 336px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.row {
+  width: 280px;
+  height: 100%;
+  cursor: pointer;
+  margin: 50px 20px 20px 20px; 
+  float: left;
+}
+.row {
+  perspective: 800px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+  border-radius: 0.375rem;
+  box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+}
+
+.one {
+  border-top: 3px solid #02b3e4;
+}
+
+.two {
+    border-top: 3px solid #49DFD3;
+}
+
+.three {
+    border-top: 3px solid #a951ed;
+}
+.row:hover .card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 0.375rem;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.375rem;
+}
+.twitter-logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-top: -1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    font-size: 30px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 100;
+    color: #2e3d49;
+}
+
+.program {
+    text-transform: uppercase;
+    color: #7d97ad;
+    font-size: 0.8125rem;
+    letter-spacing: 0.09875rem;
+    font-weight: 800;
+    line-height: 0rem;
+}
+
+.nanodegree-name {
+    font-size: 1.125rem;
+    line-height: 0rem;
+    font-weight: 600;
+    color: #2e3d49;
+}
+
+.current {
+  position: relative;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.current span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  color: #dbe2e8;
+}
+
+.current:before {
+  background-color: #dbe2e8;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 90%;
+
+}
+.current:before {
+  left: 0.8rem;
+}
+
+.company {
+    font-size: 1.125rem;
+    line-height: 0;
+    font-weight: 300;
+    color: #2e3d49;
+}
+
+.italic-small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-weight: bold;
+    color: #525c65;
+}
+
+@media screen and (max-width:330px) {
+    .container {
+    width: 100%;
+  }
+    .row {
+        margin: 30px 5px 5px 5px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+    width: 100%;
+  }
+}
+
